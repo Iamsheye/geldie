@@ -1,32 +1,23 @@
-import toast from "react-hot-toast";
-import { useMoralis } from "react-moralis";
-import { useEffect, useState } from "react";
-import Moralis from "moralis";
-
-import ethereum from "../eth";
-import Header from "../components/Header";
+import React, { useState } from "react";
 import BuyNow from "../components/BuyNow";
-import { useNavigate } from "react-router-dom";
+import Header from "../components/Header";
 
-const Homepage = () => {
+const Ticketpage = () => {
   const [userAddress, setUserAddress] = useState<string>("");
-  const navigate = useNavigate();
 
   return (
     <section className="wrapper">
       <Header userAddress={userAddress} setUserAddress={setUserAddress} />
-      <img src="/rolling-loud.png" alt="" width="100%" />
-      <section className="md:flex justify-between items-center my-8">
+      <section className="md:flex justify-between items-center my-8 md:my-16">
         <div className="flex-1">
-          <h1 className="text-[#ffed8e] text-[3rem] font-semibold md:text-[4.5rem]">
-            Rolling Loud Miami 2022
-          </h1>
-          <p className="text-[#d2d2d2] text-[1.25rem] font-['Inter'] md:max-w-[80%]">
-            Rolling Loud is a recurring music festival held in the United States
-            of America.
-          </p>
+          <div>
+            <img src="./nft-img.png" alt="" />
+          </div>
         </div>
         <div className="flex-1 font-['Inter'] text-white mt-6 md:mt-0">
+          <p className="text-4xl mb-5 font-semibold max-w-[381px]">
+            Regular Ticket - Rolling Loud Miami 2022
+          </p>
           <div className="flex items-center mb-3">
             <img
               src="https://cryptologos.cc/logos/polygon-matic-logo.svg?v=022"
@@ -44,11 +35,11 @@ const Homepage = () => {
               More details...
             </span>
           </p>
-          <BuyNow onClick={(e) => navigate("/ticket")} />
+          <BuyNow onClick={(e) => console.log("/ticket")} />
         </div>
       </section>
     </section>
   );
 };
 
-export default Homepage;
+export default Ticketpage;
