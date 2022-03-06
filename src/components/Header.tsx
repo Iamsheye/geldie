@@ -24,7 +24,7 @@ const Header = ({ userAddress, setUserAddress }: IHeader) => {
   }
 
   useEffect(() => {
-    setUserAddress(ethereum.selectedAddress);
+    setUserAddress(ethereum?.selectedAddress);
   }, [user]);
 
   return (
