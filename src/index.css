@@ -25,6 +25,12 @@ code {
   margin-right: auto;
 }
 
+.btn-buy > span::before {
+  content: url("/public/icons/icon-buynow.svg");
+  vertical-align: text-top;
+  margin-right: 4px;
+}
+
 @media (min-width: 576px) {
   .wrapper {
     max-width: 540px;

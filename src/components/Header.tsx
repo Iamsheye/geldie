@@ -40,7 +40,7 @@ const Header = ({ userAddress, setUserAddress }: IHeader) => {
           {isAuthenticated ? (
             <button
               disabled
-              className="text-white bg-slate-800 rounded-full py-2.5 px-5"
+              className="text-white bg-[#ffffff1a] rounded-full py-2.5 px-5"
             >
               {`${userAddress.split("").splice(0, 3).join("")}...${userAddress
                 .split("")
@@ -58,6 +58,7 @@ const Header = ({ userAddress, setUserAddress }: IHeader) => {
               onClick={() =>
                 authenticate({
                   signingMessage: "Project Geldie Authentication",
+                  chainId: 137,
                 })
               }
               className="text-white bg-gradient-to-tr from-green-600 to-sky-500 hover:bg-gradient-to-bl focus:ring-4 focus:ring-sky-300 font-medium rounded-full text-sm px-5 py-2.5"
