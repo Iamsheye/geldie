@@ -31,6 +31,16 @@ code {
   margin-right: 4px;
 }
 
+.event-title {
+  font-family: "DM Serif Display";
+}
+
+@media (min-width: 1025px) {
+  .event-title {
+    width: 75%;
+  }
+}
+
 @media (min-width: 576px) {
   .wrapper {
     max-width: 540px;

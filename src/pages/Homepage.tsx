@@ -18,7 +18,7 @@ const Homepage = () => {
       <img src="/rolling-loud.png" alt="" width="100%" />
       <section className="md:flex justify-between items-center my-8">
         <div className="flex-1">
-          <h1 className="text-[#ffed8e] text-[3rem] font-semibold md:text-[4.5rem]">
+          <h1 className="event-title text-[#ffed8e] text-[3rem] font-semibold font-['DM Serif Display'] md:text-[4.5rem]">
             Rolling Loud Miami 2022
           </h1>
           <p className="text-[#d2d2d2] text-[1.25rem] font-['Inter'] md:max-w-[80%]">
